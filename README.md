@@ -10,7 +10,7 @@
 - [Jest (расширение для VS Code)](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 ## Полезные ссылки:
-- [Jest (официальный сайт)](https://jestjs.io)
+- [Курс по Enzyme](https://www.youtube.com/playlist?list=PLNkWIWHIRwMFPcbK0AJVBYyNveXmMZhMS)
 - [React Testing Library (docs)](https://testing-library.com)
 - [React Testing Library (repo)](https://github.com/testing-library/react-testing-library)
 
