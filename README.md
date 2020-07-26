@@ -24,6 +24,9 @@
 - Перейдите в нужную ветку соответствующую уроку: `git checkout lesson_01`, `git checkout lesson_02` и т.д.
 - Запустите тесты: `yarn test`
 
+## Установка зависимостей
+`yarn add axios react-router react-router-dom history`
+
 ## Автор курса в социальных сетях:
 Social network | Link to Profile
 -----|-----
