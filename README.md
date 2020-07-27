@@ -1,7 +1,7 @@
 # React Testing Library
 
 ### Описание курса:
-В данном видеокурсе мы с вами рассмотрим тестирование React-приложения и React-компонентов с помощью библиотеки react-testing-library.
+В данном видеокурсе мы с вами рассмотрим тестирование React-приложения и React-компонентов с помощью библиотеки react-testing-library. В дополнение протестируем связку React и React Router, а так же React и Redux. Плюс, разберём тестирование практически всех нативных React-хуков.
 
 ## Используемые ресурсы и инструменты:
 - [Visual Studio Code (редактор кода)](https://code.visualstudio.com)
@@ -25,7 +25,7 @@
 - Запустите тесты: `yarn test`
 
 ## Установка зависимостей
-`yarn add axios react-router react-router-dom history`
+`yarn add axios react-router react-router-dom history redux react-redux`
 
 ## Автор курса в социальных сетях:
 Social network | Link to Profile
