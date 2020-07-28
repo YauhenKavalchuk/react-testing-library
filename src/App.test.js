@@ -28,8 +28,10 @@ describe("events", () => {
   });
 
   it("input focus", () => {
-    render(<input data-testid="simple-input" type="text" />);
-    const input = screen.getByTestId("simple-input");
+    const { getByTestId } = render(
+      <input data-testid="simple-input" type="text" />
+    );
+    const input = getByTestId("simple-input");
     expect(input).not.toHaveFocus();
     input.focus();
     expect(input).toHaveFocus();
