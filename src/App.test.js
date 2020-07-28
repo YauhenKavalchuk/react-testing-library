@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { render, screen, act } from "@testing-library/react";
+import { render, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
 
@@ -13,9 +13,9 @@ const hits = [
 describe("App", () => {
   it("fetches news from an API", async () => {
     axios.get.mockImplementationOnce(() => Promise.resolve({ data: { hits } }));
-    render(<App />);
-    userEvent.click(screen.getByRole("button"));
-    const items = await screen.findAllByRole("listitem");
+    const { getByRole, findAllByRole } = render(<App />);
+    userEvent.click(getByRole("button"));
+    const items = await findAllByRole("listitem");
     expect(items).toHaveLength(2);
     // Additional
     expect(axios.get).toHaveBeenCalledTimes(1);
@@ -26,18 +26,18 @@ describe("App", () => {
 
   it("fetches news from an API and reject", async () => {
     axios.get.mockImplementationOnce(() => Promise.reject(new Error()));
-    render(<App />);
-    userEvent.click(screen.getByRole("button"));
-    const message = await screen.findByText(/Something went wrong/);
+    const { getByRole, findByText } = render(<App />);
+    userEvent.click(getByRole("button"));
+    const message = await findByText(/Something went wrong/);
     expect(message).toBeInTheDocument();
   });
 
   it("fetches news from an API (alternative)", async () => {
     const promise = Promise.resolve({ data: { hits } });
     axios.get.mockImplementationOnce(() => promise);
-    render(<App />);
-    userEvent.click(screen.getByRole('button'));
+    const { getByRole, getAllByRole } = render(<App />);
+    userEvent.click(getByRole("button"));
     await act(() => promise);
-    expect(screen.getAllByRole('listitem')).toHaveLength(2);
+    expect(getAllByRole("listitem")).toHaveLength(2);
   });
 });
