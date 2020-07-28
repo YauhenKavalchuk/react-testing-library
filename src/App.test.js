@@ -35,14 +35,14 @@ describe("events", () => {
   });
 
   it("tab", () => {
-    render(
+    const { getAllByTestId } = render(
       <div>
         <input data-testid="element" type="checkbox" />
         <input data-testid="element" type="radio" />
         <input data-testid="element" type="number" />
       </div>
     );
-    const [checkbox, radio, number] = screen.getAllByTestId("element");
+    const [checkbox, radio, number] = getAllByTestId("element");
     userEvent.tab();
     expect(checkbox).toHaveFocus();
     userEvent.tab();
@@ -52,7 +52,7 @@ describe("events", () => {
   });
 
   it("select", () => {
-    render(
+    const { selectOptions, getByRole, getByText } = render(
       <select>
         <option value="1">A</option>
         <option value="2">B</option>
@@ -60,10 +60,10 @@ describe("events", () => {
       </select>
     );
 
-    userEvent.selectOptions(screen.getByRole("combobox"), "1");
-    expect(screen.getByText("A").selected).toBeTruthy();
-    userEvent.selectOptions(screen.getByRole("combobox"), "2");
-    expect(screen.getByText("B").selected).toBeTruthy();
-    expect(screen.getByText("A").selected).toBeFalsy();
+    userEvent.selectOptions(getByRole("combobox"), "1");
+    expect(getByText("A").selected).toBeTruthy();
+    userEvent.selectOptions(getByRole("combobox"), "2");
+    expect(getByText("B").selected).toBeTruthy();
+    expect(getByText("A").selected).toBeFalsy();
   });
 });
