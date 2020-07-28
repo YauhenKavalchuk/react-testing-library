@@ -38,6 +38,7 @@ describe("Portal", () => {
     userEvent.click(getByText(/close/i));
     expect(handleClose).toHaveBeenCalledTimes(1);
   });
+
   it("should be unmounted", () => {
     const { getByText, unmount, queryByText } = render(
       <Modal>
