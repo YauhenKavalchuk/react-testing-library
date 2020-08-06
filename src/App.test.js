@@ -5,12 +5,12 @@ import App from "./App";
 describe("App", () => {
   test("renders App component", async () => {
     render(<App />);
-    await screen.findByText(/Logged in as/);
-    expect(screen.queryByText(/Searches for JavaScript/)).toBeNull();
+    await screen.findByText(/Logged in as/i);
+    expect(screen.queryByText(/Searches for React/)).toBeNull();
     fireEvent.change(screen.getByRole("textbox"), {
       target: { value: "React" },
     });
-    expect(screen.getByText(/Searches for React/)).toBeInTheDocument();
+    expect(screen.queryByText(/Searches for React/)).toBeInTheDocument();
   });
 });
 
@@ -29,7 +29,7 @@ describe("events", () => {
 
   it("input focus", () => {
     const { getByTestId } = render(
-      <input data-testid="simple-input" type="text" />
+      <input type="text" data-testid="simple-input" />
     );
     const input = getByTestId("simple-input");
     expect(input).not.toHaveFocus();
