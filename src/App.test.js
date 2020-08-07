@@ -7,7 +7,7 @@ describe("App", () => {
   test("renders App component", async () => {
     render(<App />);
     await screen.findByText(/Logged in as/);
-    expect(screen.queryByText(/Searches for JavaScript/)).toBeNull();
+    expect(screen.queryByText(/Searches for React/)).toBeNull();
     // fireEvent.change(screen.getByRole("textbox"), {
     //   target: { value: "React" },
     // });
@@ -23,6 +23,7 @@ describe("events", () => {
     expect(checkbox).not.toBeChecked();
     // fireEvent.click(checkbox);
     userEvent.click(checkbox);
+    // userEvent.click(checkbox, { ctrlKey: true, shiftKey: true });
     expect(checkbox).toBeChecked();
   });
 
@@ -30,11 +31,12 @@ describe("events", () => {
     const onChange = jest.fn();
     const { container } = render(<input type="checkbox" onChange={onChange} />);
     const checkbox = container.firstChild;
+    expect(checkbox).not.toBeChecked();
     userEvent.dblClick(checkbox);
     expect(onChange).toHaveBeenCalledTimes(2);
   });
 
-  it("tab", () => {
+  it("focus", () => {
     const { getAllByTestId } = render(
       <div>
         <input data-testid="element" type="checkbox" />
@@ -51,7 +53,7 @@ describe("events", () => {
     expect(number).toHaveFocus();
   });
 
-  it("select", () => {
+  it("select option", () => {
     const { selectOptions, getByRole, getByText } = render(
       <select>
         <option value="1">A</option>
@@ -60,9 +62,10 @@ describe("events", () => {
       </select>
     );
 
-    userEvent.selectOptions(getByRole("combobox"), "1");
+    userEvent.selectOptions(getByRole('combobox'), "1");
     expect(getByText("A").selected).toBeTruthy();
-    userEvent.selectOptions(getByRole("combobox"), "2");
+
+    userEvent.selectOptions(getByRole('combobox'), "2");
     expect(getByText("B").selected).toBeTruthy();
     expect(getByText("A").selected).toBeFalsy();
   });
