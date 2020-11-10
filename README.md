@@ -35,18 +35,18 @@
 `yarn add axios react-router react-router-dom history redux react-redux`
 
 ## Список уроков
-- #0 Введение (Introduction) 
-- #1 Установка окружения (Setup Environment) 
-- #2 Рендеринг компонента (Rendering a Component) 
-- #3 Поисковые типы (Search Types)
-- #4 Поисковые варианты и утверждения (Search Variants & Assertive Functions) 
-- #5 fireEvent Событие (Fire Events) 
-- #6 userEvent Событие (User Events) 
-- #7 Асинхронное тестирование (Asynchronous Testing) 
-- #8 Тестирование контекста и портала (Context & Portal Testing) 
-- #9 Тестирование Реакт Роутера (React Router Testing) 
-- #10 Тестирование Редакса и useReducer (Redux & useReducer Testing) 
-- #11 Лучшие практики (Best Practices) 
+- [#0 Введение (Introduction)](https://youtu.be/v4pycbXkP1Y)
+- [#1 Установка окружения (Setup Environment)](https://youtu.be/aUgcf6p1Ep4)
+- [#2 Рендеринг компонента (Rendering a Component)](https://youtu.be/yNi7hmfX0Iw)
+- [#3 Поисковые типы (Search Types)](https://youtu.be/6ZtHq7SAp1Q)
+- [#4 Поисковые варианты и утверждения (Search Variants & Assertive Functions)](https://youtu.be/R_x5citvlL4)
+- [#5 fireEvent Событие (Fire Events)](https://youtu.be/7fD24m3rsKw)
+- [#6 userEvent Событие (User Events)](https://youtu.be/3YrxcAXkUKQ)
+- [#7 Асинхронное тестирование (Asynchronous Testing)](https://youtu.be/9ztPFFqsPPA)
+- [#8 Тестирование контекста и портала (Context & Portal Testing)](https://youtu.be/APkWo-na450)
+- [#9 Тестирование Реакт Роутера (React Router Testing)](https://youtu.be/TMRgI4_djCY)
+- [#10 Тестирование Редакса и useReducer (Redux & useReducer Testing)](https://youtu.be/L-Wf-u7ZSBU)
+- [#11 Лучшие практики (Best Practices)](https://youtu.be/RyR6jM7pp4g)
 
 ## Автор курса в социальных сетях:
 Social network | Link to Profile
