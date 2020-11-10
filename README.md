@@ -34,6 +34,20 @@
 ## Установка зависимостей
 `yarn add axios react-router react-router-dom history redux react-redux`
 
+## Список уроков
+- #0 Введение (Introduction) 
+- #1 Установка окружения (Setup Environment) 
+- #2 Рендеринг компонента (Rendering a Component) 
+- #3 Поисковые типы (Search Types)
+- #4 Поисковые варианты и утверждения (Search Variants & Assertive Functions) 
+- #5 fireEvent Событие (Fire Events) 
+- #6 userEvent Событие (User Events) 
+- #7 Асинхронное тестирование (Asynchronous Testing) 
+- #8 Тестирование контекста и портала (Context & Portal Testing) 
+- #9 Тестирование Реакт Роутера (React Router Testing) 
+- #10 Тестирование Редакса и useReducer (Redux & useReducer Testing) 
+- #11 Лучшие практики (Best Practices) 
+
 ## Автор курса в социальных сетях:
 Social network | Link to Profile
 -----|-----
