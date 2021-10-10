@@ -3,38 +3,51 @@
 ### Описание курса:
 В данном видеокурсе мы с вами рассмотрим тестирование React-приложения и React-компонентов с помощью библиотеки react-testing-library. В дополнение протестируем связку React и React Router, а так же React и Redux. Плюс, разберём тестирование практически всех нативных React-хуков.
 
-## Используемые ресурсы и инструменты:
+### Поддержать развитие канала:
+[<img alt="webDev | YouTube Sponsor" src="https://img.shields.io/badge/Become a sponsor-F70000.svg?&style=for-the-badge&logo=youtube&logoColor=fff" />][sponsor]
+[<img alt="webDev | Patreon" src="https://img.shields.io/badge/Become a patron-EF6451.svg?&style=for-the-badge&logo=patreon&logoColor=fff" />][patron]
+
+---
+
+### Используемые ресурсы и инструменты:
 - [Visual Studio Code (редактор кода)](https://code.visualstudio.com)
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com)
 - [Jest (расширение для VS Code)](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
-## Полезные курсы и видео:
+### Полезные курсы и видео:
 - [Jest & Enzyme](https://www.youtube.com/playlist?list=PLNkWIWHIRwMFPcbK0AJVBYyNveXmMZhMS)
 - [React & Redux](https://www.youtube.com/playlist?list=PLNkWIWHIRwME_Gv2vlWAR6TfeSXylYfw4)
 - [React Hooks A Complete Introduction](https://youtu.be/X6j7Y7tp3_c)
 - [React 16.8 Hooks RELEASE!](https://youtu.be/19EmLE2mZ1Q)
 
-## Полезные ссылки:
+### Полезные ссылки:
 - [Курс по Enzyme](https://www.youtube.com/playlist?list=PLNkWIWHIRwMFPcbK0AJVBYyNveXmMZhMS)
 - [React Testing Library (docs)](https://testing-library.com)
 - [React Testing Library (repo)](https://github.com/testing-library/react-testing-library)
 - [How To Test Your React Apps With The React Testing Library](https://www.smashingmagazine.com/2020/07/react-apps-testing-library/)
 
-## Issues:
+### Issues:
 - [Nothing was returned from render](https://github.com/testing-library/react-testing-library/issues/663)
 
-## Быстрый старт
+---
+
+### Быстрый старт:
 - Клонируйте репозиторий: `git clone https://github.com/YauhenKavalchuk/react-testing-library.git`
 - Перейдите в папку с проектом `cd react-testing-library`
-- Установите зависимости: `yarn install` или `npm install`
-- Перейдите в нужную ветку соответствующую уроку: `git checkout lesson_01`, `git checkout lesson_02` и т.д.
+- Перейдите в нужную ветку соответствующую уроку:
+  - `git checkout lesson_01`
+  - `git checkout lesson_02`
+  - `git checkout lesson_10` и т.д.
+- Установите зависимости: `yarn install`
 - Запустите тесты: `yarn test`
 
-## Установка зависимостей
+### Установка зависимостей:
 `yarn add axios react-router react-router-dom history redux react-redux`
 
-## Список уроков
+---
+
+### Список уроков:
 - [#0 Введение (Introduction)](https://youtu.be/v4pycbXkP1Y)
 - [#1 Установка окружения (Setup Environment)](https://youtu.be/aUgcf6p1Ep4)
 - [#2 Рендеринг компонента (Rendering a Component)](https://youtu.be/yNi7hmfX0Iw)
@@ -48,22 +61,19 @@
 - [#10 Тестирование Редакса и useReducer (Redux & useReducer Testing)](https://youtu.be/L-Wf-u7ZSBU)
 - [#11 Лучшие практики (Best Practices)](https://youtu.be/RyR6jM7pp4g)
 
-## Автор курса в социальных сетях:
+---
 
-[<img align="left" alt="webDev | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
-[<img align="left" alt="webDev | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img align="left" alt="webDev | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="webDev | VK" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/vk.svg" />][vk]
-[<img align="left" alt="webDev | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]&nbsp;
-
-## Поддержать канал:
-
-<a href="https://www.patreon.com/YauhenKavalchuk" target="_blank">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
+### Связаться со мной:
+[<img alt="webDev | YouTube" src="https://img.shields.io/badge/youtube-FF0000.svg?&style=for-the-badge&logo=Instagram&logoColor=white" />][youtube]
+[<img alt="webDev | Instagram" src="https://img.shields.io/badge/instagram-E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white" />][instagram]
+[<img alt="webDev | LinkedIn" src="https://img.shields.io/badge/linkedin-0077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
+[<img alt="webDev | Twitter" src="https://img.shields.io/badge/twitter-1DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white" />][twitter]
+[<img alt="webDev | VK" src="https://img.shields.io/badge/vk-4680C2.svg?&style=for-the-badge&logo=Twitter&logoColor=white" />][vk]
 
 [youtube]: https://youtube.com/YauhenKavalchuk
 [instagram]: https://instagram.com/YauhenKavalchuk
 [linkedin]: https://linkedin.com/in/YauhenKavalchuk
 [vk]: https://vk.com/YauhenKavalchuk
 [twitter]: https://twitter.com/YauhenKavalchuk
+[sponsor]: https://www.youtube.com/channel/UCE9ODjNIkOHrnSdkYWLfYhg/join
+[patron]: https://www.patreon.com/YauhenKavalchuk
